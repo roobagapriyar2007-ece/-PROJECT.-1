@@ -1,0 +1,29 @@
+# Student Grade Calculator
+
+name = input("Enter student name: ")
+
+# Get marks
+math = int(input("Enter Math marks: "))
+science = int(input("Enter Science marks: "))
+english = int(input("Enter English marks: "))
+
+# Calculate total and average
+total = math + science + english
+average = total / 3
+
+# Grade calculation
+if average >= 90:
+    grade = "A"
+elif average >= 75:
+    grade = "B"
+elif average >= 50:
+    grade = "C"
+else:
+    grade = "Fail"
+
+# Output
+print("\n--- Result ---")
+print("Name:", name)
+print("Total Marks:", total)
+print("Average:", average)
+print("Grade:", grade)
